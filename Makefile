@@ -1,4 +1,4 @@
-ORG := stelligent
+ORG := ovx
 PACKAGE := mu
 SRC_PACKAGES = provider workflows cli common templates e2e
 SNAPSHOT_SUFFIX := develop
@@ -83,9 +83,9 @@ cyclo:
 	@gocyclo -over 15 $(SRC_PACKAGES)
 	@gocyclo -over 12 $(SRC_PACKAGES) || echo "WARNING: cyclomatic complexity is high"
 
-ifdef GEM
-test: nag
-endif
+#ifdef GEM
+#test: nag
+#endif
 
 test: info lint gen cyclo
 	@echo "=== testing ==="

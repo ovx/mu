@@ -77,7 +77,7 @@ Parameters:
     Description: The build image to use for mu commands
   MuDownloadBaseurl:
     Type: String
-    Default: "https://github.com/stelligent/mu/releases/download"
+    Default: "https://github.com/ovx/mu/releases/download"
     Description: The base url to install mu from
   MuDownloadVersion:
     Type: String
