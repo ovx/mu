@@ -1,7 +1,7 @@
 ORG := ovx
 PACKAGE := mu
 SRC_PACKAGES = provider workflows cli common templates e2e
-SNAPSHOT_SUFFIX := develop
+SNAPSHOT_SUFFIX := ext
 
 ###
 SRC_FILES = $(foreach pkg, $(SRC_PACKAGES), ./$(pkg)/...) .
